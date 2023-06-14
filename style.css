@@ -1,0 +1,253 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: #f0ccff;
+}
+
+/* ===================== Para teléfonos ======================== */
+
+
+/* =========== Header y Navbar ============ */
+
+.container-header {
+  display: flex;
+  position: fixed;
+  padding: 10px;
+  height: 60px;
+  background-color: #a363ff;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+#logo img {
+  width: 60px;
+}
+
+#logo h2 {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 40px;
+  gap: 10px;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.menu-toggle img {
+  width: 40px;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links a {
+	color: #fff;
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.nav-links a:hover {
+	color: #639;
+} 
+
+li {
+  list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-links.nav-links-responsive {
+  position: absolute;
+  display: flex;
+  background-color: rgba(20,20,20,0.95);
+  width: 100%;
+  height: 100vh;
+  top: 60px;
+  left: 0;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+  gap: 50px;
+  font-size: 30px;
+}
+
+
+/* =========== Main ============ */
+
+main {
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 60px;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+
+.container-main {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 100%;
+  padding: 10px;
+} 
+
+#myButton {
+	padding: 8px;
+	border-radius: 10px;
+	background-color: #639;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	cursor: pointer;
+}
+
+#video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 7;
+  text-align: center;
+}
+
+iframe {
+  max-width: 90%;
+}
+
+/* ========== Contact ============ */
+
+#form-container {
+	padding: 10px;
+	border-color: #a363ff;
+}
+
+#myForm label input {
+	padding: 8px;
+	border-radius: 5px;
+}
+
+#send-button {
+	padding: 8px;
+	border-radius: 10px;
+	background-color: #639;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	cursor: pointer;
+}
+
+
+/* ========== Services ============ */
+
+#services-list {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+/* ========== Galery ============= */
+
+#main-gallery {
+	text-align: center;
+	padding: 74px 10px 0 10px;
+}
+
+#img-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5px;
+	padding: 18px 0 95px 0;
+}
+
+.gatitos {
+	width: 400px;
+	border-radius: 10px;
+}
+
+
+/* =========== Footer ============ */
+
+#myName {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 1em;
+}
+
+.social img {
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 8;
+  background-color: #d9b8d9;
+  padding: 10px;
+}
+
+/* ===================== Para tablets o PC ======================== */
+
+@media only screen and (min-width: 768px) {
+.menu-toggle {
+  display: none;
+}
+
+.nav-links {
+	display: flex;
+  align-items: center;
+}
+
+.nav-links li a {
+	color: #fff;
+	font-family: 'Fuzzy Bubbles', cursive;
+	font-size: 20px;
+	padding: 8px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+}
+
