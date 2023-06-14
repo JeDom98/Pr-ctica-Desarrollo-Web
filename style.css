@@ -207,6 +207,7 @@ iframe {
 #myName {
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 1em;
+  text-align: center;
 }
 
 .social img {
