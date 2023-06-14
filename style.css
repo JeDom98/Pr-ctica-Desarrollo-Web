@@ -96,7 +96,7 @@ a {
 
 /* =========== Main ============ */
 
-main {
+.main-top {
 	display: flex;
   flex-direction: column;
   flex-wrap: wrap;
