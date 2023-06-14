@@ -181,7 +181,7 @@ iframe {
 
 #main-gallery {
 	text-align: center;
-	padding: 74px 10px 0 10px;
+	padding: 74px 10px 10 10px;
 }
 
 #img-container {
@@ -195,6 +195,7 @@ iframe {
 .gatitos {
 	width: 400px;
 	border-radius: 10px;
+	object-fit: cover;
 }
 
 
