@@ -78,10 +78,10 @@ a {
 	text-decoration: none;
 }
 
-.nav-links.nav-links-responsive {
+.nav-links-responsive {
   position: absolute;
   display: flex;
-  background-color: rgba(20,20,20,0.95);
+  background-color: #21143bed;
   width: 100%;
   height: 100vh;
   top: 60px;
@@ -91,8 +91,15 @@ a {
   align-items: center;
   gap: 50px;
   font-size: 30px;
+  transform-origin: top;
+  animation: 600ms desplegar;
 }
 
+@keyframes desplegar {
+  from {
+    transform: scaleY(0);
+  }
+}
 
 /* =========== Main ============ */
 
@@ -253,6 +260,4 @@ footer {
   justify-content: space-between;
   width: 100%;
 }
-
 }
-
