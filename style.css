@@ -94,6 +94,10 @@ a {
   font-family: 'Fuzzy Bubbles', cursive;
 }
 
+.nav-links a:hover {
+  color: #639;
+}
+
 /* =========== Main ============ */
 
 .main-top {
