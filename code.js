@@ -1,10 +1,21 @@
-
 //    Esto es para la barra responsive 
 
-document.querySelector("div.menu-toggle")
-    .addEventListener("click", function() {
-           document.querySelector(".nav-links").
-                      classList.toggle("nav-links-responsive")});
+const menu = document.querySelector("#navbar");
+const menu_btn = document.querySelector("#menu-toggle");
+const menu_height = menu.clientHeight;
+menu.style.height = 0;
+
+menu_btn.addEventListener("click", function(){
+  const menu_position = menu.style.opacity;
+  
+  if(menu_position != 1){
+    menu.style.height = `${menu_height}px`;
+    menu.style.opacity = 1;
+  }else{
+    menu.style.height = 0;
+    menu.style.opacity = 0;
+  }
+});
 
 //   Esto es para el boton que esta en la página principal...
 
