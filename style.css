@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Nunito";
+  src:
+    url("fonts/Nunito/Nunito-Regular.woff2") format("woff2"),
+    url("fonts/Nunito/Nunito-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Funzzy Bubbles";
+  src:
+  url("fonts/Fuzzy_Bubbles/FuzzyBubbles-Bold.woff2") format("woff2"),
+  url("fonts/Fuzzy_Bubbles/FuzzyBubbles-Bold.woff") format("woff");
+}
+
 * {
 	padding: 0;
 	margin: 0;
